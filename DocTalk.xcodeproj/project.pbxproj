@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28ADCE022087CFB600F812AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADCE012087CFB600F812AB /* AppDelegate.swift */; };
+		28ADCE042087CFB600F812AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADCE032087CFB600F812AB /* ViewController.swift */; };
+		28ADCE072087CFB600F812AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ADCE052087CFB600F812AB /* Main.storyboard */; };
+		28ADCE092087CFB900F812AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28ADCE082087CFB900F812AB /* Assets.xcassets */; };
+		28ADCE0C2087CFB900F812AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ADCE0A2087CFB900F812AB /* LaunchScreen.storyboard */; };
+		28ADCE142087D0AD00F812AB /* AlamofireConnectionMangager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADCE132087D0AD00F812AB /* AlamofireConnectionMangager.swift */; };
+		28ADCE162087D0FE00F812AB /* AllUserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADCE152087D0FE00F812AB /* AllUserListVC.swift */; };
+		28ADCE182087D25200F812AB /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADCE172087D25200F812AB /* UserListCell.swift */; };
+		28ADCE1A2087D40C00F812AB /* ApiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADCE192087D40C00F812AB /* ApiList.swift */; };
+		AD10A1FA5BE9E2C4650EAFA0 /* Pods_DocTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2CD781C18BA3B860CAD0A2 /* Pods_DocTalk.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28ADCDFE2087CFB600F812AB /* DocTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28ADCE012087CFB600F812AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28ADCE032087CFB600F812AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28ADCE062087CFB600F812AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28ADCE082087CFB900F812AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28ADCE0B2087CFB900F812AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28ADCE0D2087CFB900F812AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28ADCE132087D0AD00F812AB /* AlamofireConnectionMangager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireConnectionMangager.swift; sourceTree = "<group>"; };
+		28ADCE152087D0FE00F812AB /* AllUserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUserListVC.swift; sourceTree = "<group>"; };
+		28ADCE172087D25200F812AB /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
+		28ADCE192087D40C00F812AB /* ApiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiList.swift; sourceTree = "<group>"; };
+		95C0194C871FDD1632DA0CDD /* Pods-DocTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocTalk/Pods-DocTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		DC2CD781C18BA3B860CAD0A2 /* Pods_DocTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE151D4FC6D9F2AEB4DFF44A /* Pods-DocTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocTalk/Pods-DocTalk.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28ADCDFB2087CFB600F812AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD10A1FA5BE9E2C4650EAFA0 /* Pods_DocTalk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		022A309941A09F2B6B02B0D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95C0194C871FDD1632DA0CDD /* Pods-DocTalk.debug.xcconfig */,
+				FE151D4FC6D9F2AEB4DFF44A /* Pods-DocTalk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		28ADCDF52087CFB600F812AB = {
+			isa = PBXGroup;
+			children = (
+				28ADCE002087CFB600F812AB /* DocTalk */,
+				28ADCDFF2087CFB600F812AB /* Products */,
+				022A309941A09F2B6B02B0D8 /* Pods */,
+				E4B7CD1B206B87B479AAEAF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28ADCDFF2087CFB600F812AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28ADCDFE2087CFB600F812AB /* DocTalk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28ADCE002087CFB600F812AB /* DocTalk */ = {
+			isa = PBXGroup;
+			children = (
+				28ADCE012087CFB600F812AB /* AppDelegate.swift */,
+				28ADCE032087CFB600F812AB /* ViewController.swift */,
+				28ADCE152087D0FE00F812AB /* AllUserListVC.swift */,
+				28ADCE132087D0AD00F812AB /* AlamofireConnectionMangager.swift */,
+				28ADCE192087D40C00F812AB /* ApiList.swift */,
+				28ADCE052087CFB600F812AB /* Main.storyboard */,
+				28ADCE172087D25200F812AB /* UserListCell.swift */,
+				28ADCE082087CFB900F812AB /* Assets.xcassets */,
+				28ADCE0A2087CFB900F812AB /* LaunchScreen.storyboard */,
+				28ADCE0D2087CFB900F812AB /* Info.plist */,
+			);
+			path = DocTalk;
+			sourceTree = "<group>";
+		};
+		E4B7CD1B206B87B479AAEAF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC2CD781C18BA3B860CAD0A2 /* Pods_DocTalk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28ADCDFD2087CFB600F812AB /* DocTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28ADCE102087CFB900F812AB /* Build configuration list for PBXNativeTarget "DocTalk" */;
+			buildPhases = (
+				1014A2730B60D7491A5EF1CE /* [CP] Check Pods Manifest.lock */,
+				28ADCDFA2087CFB600F812AB /* Sources */,
+				28ADCDFB2087CFB600F812AB /* Frameworks */,
+				28ADCDFC2087CFB600F812AB /* Resources */,
+				8F58B02736383C8F2C7C76F7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocTalk;
+			productName = DocTalk;
+			productReference = 28ADCDFE2087CFB600F812AB /* DocTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28ADCDF62087CFB600F812AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = GeekGuns;
+				TargetAttributes = {
+					28ADCDFD2087CFB600F812AB = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 28ADCDF92087CFB600F812AB /* Build configuration list for PBXProject "DocTalk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28ADCDF52087CFB600F812AB;
+			productRefGroup = 28ADCDFF2087CFB600F812AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28ADCDFD2087CFB600F812AB /* DocTalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28ADCDFC2087CFB600F812AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28ADCE0C2087CFB900F812AB /* LaunchScreen.storyboard in Resources */,
+				28ADCE092087CFB900F812AB /* Assets.xcassets in Resources */,
+				28ADCE072087CFB600F812AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1014A2730B60D7491A5EF1CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DocTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F58B02736383C8F2C7C76F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DocTalk/Pods-DocTalk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocTalk/Pods-DocTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28ADCDFA2087CFB600F812AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28ADCE1A2087D40C00F812AB /* ApiList.swift in Sources */,
+				28ADCE182087D25200F812AB /* UserListCell.swift in Sources */,
+				28ADCE042087CFB600F812AB /* ViewController.swift in Sources */,
+				28ADCE022087CFB600F812AB /* AppDelegate.swift in Sources */,
+				28ADCE142087D0AD00F812AB /* AlamofireConnectionMangager.swift in Sources */,
+				28ADCE162087D0FE00F812AB /* AllUserListVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28ADCE052087CFB600F812AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28ADCE062087CFB600F812AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28ADCE0A2087CFB900F812AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28ADCE0B2087CFB900F812AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28ADCE0E2087CFB900F812AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28ADCE0F2087CFB900F812AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28ADCE112087CFB900F812AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95C0194C871FDD1632DA0CDD /* Pods-DocTalk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZU5GR4FRVD;
+				INFOPLIST_FILE = DocTalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GeekGuns.DocTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28ADCE122087CFB900F812AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE151D4FC6D9F2AEB4DFF44A /* Pods-DocTalk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZU5GR4FRVD;
+				INFOPLIST_FILE = DocTalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GeekGuns.DocTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28ADCDF92087CFB600F812AB /* Build configuration list for PBXProject "DocTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28ADCE0E2087CFB900F812AB /* Debug */,
+				28ADCE0F2087CFB900F812AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28ADCE102087CFB900F812AB /* Build configuration list for PBXNativeTarget "DocTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28ADCE112087CFB900F812AB /* Debug */,
+				28ADCE122087CFB900F812AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28ADCDF62087CFB600F812AB /* Project object */;
+}
