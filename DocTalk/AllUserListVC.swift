@@ -72,7 +72,7 @@ class AllUserListVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
                 
                 self.userListTable.reloadData()
             }
-              
+            
         },failure:  { (error)-> Void in
             print("Error",error!)
         })
@@ -86,11 +86,15 @@ class AllUserListVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : UserListCell = self.userListTable.dequeueReusableCell(withIdentifier: "userListCell") as! UserListCell
         
+        guard userListArray.count > indexPath.row else {
+            return cell
+        }
         let userListDict : NSDictionary = userListArray[indexPath.row] as! NSDictionary
         
-        
-        cell.nameLabel.text = (userListDict.value(forKey: "login") as! String)
-        cell.followersLabel.text = String(indexPath.row)
+        let name : String = userListDict.value(forKey: "login") as! String
+        cell.nameLabel.text = "UserId: \(name) "
+        let score : NSNumber = userListDict.value(forKey: "score") as! NSNumber
+        cell.followersLabel.text = "Score: \(score)" //String(indexPath.row)
         
         let imgUrl : String = userListDict.value(forKey: "avatar_url") as! String
         
@@ -115,7 +119,14 @@ class AllUserListVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
             
              enterUserName = enterUserName.replacingOccurrences(of: " ", with: "")
 
-             GetUserList(userName: enterUserName, pagenumber: 1)
+            let mutebleaArray : NSMutableArray = userListArray.mutableCopy() as! NSMutableArray
+            mutebleaArray.removeAllObjects()
+            
+            userListArray = mutebleaArray
+            totalPage = 0
+            pageCount = 0
+            
+            GetUserList(userName: enterUserName, pagenumber: 1)
            
         }
         else{
