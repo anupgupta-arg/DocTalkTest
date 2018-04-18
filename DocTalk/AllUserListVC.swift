@@ -48,23 +48,31 @@ class AllUserListVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
             
             print("ResponseResult",responseResult)
             
-            let tempDataArray : NSArray = responseResult.value(forKey: "items") as! NSArray;
-            if self.userListArray.count == 0 {
-                self.userListArray = tempDataArray
+            if let message : String = responseResult.value(forKey: "message") as? String {
+                self.showAlert(alertMessage: message)
                 
             }
             else{
-               self.userListArray = self.userListArray.addingObjects(from: tempDataArray as! [Any]) as NSArray
                 
+                
+                let tempDataArray : NSArray = responseResult.value(forKey: "items") as! NSArray;
+                if self.userListArray.count == 0 {
+                    self.userListArray = tempDataArray
+                    
+                }
+                else{
+                    self.userListArray = self.userListArray.addingObjects(from: tempDataArray as! [Any]) as NSArray
+                    
+                }
+                
+                let totalCount : NSNumber = responseResult.value(forKey: "total_count") as! NSNumber
+                
+                self.totalPage = totalCount.intValue / 100
+                
+                
+                self.userListTable.reloadData()
             }
-            
-            let totalCount : NSNumber = responseResult.value(forKey: "total_count") as! NSNumber
-           
-            self.totalPage = totalCount.intValue / 100
-            
-            
-            self.userListTable.reloadData()
-             
+              
         },failure:  { (error)-> Void in
             print("Error",error!)
         })
@@ -89,6 +97,7 @@ class AllUserListVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
         cell.userAvatar.sd_setImage(with: URL(string: imgUrl), placeholderImage: nil)
         return cell
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
@@ -105,16 +114,7 @@ class AllUserListVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
             print("enterUserName",enterUserName)
             
              enterUserName = enterUserName.replacingOccurrences(of: " ", with: "")
-            
-            
-//            var predicate : NSPredicate
-//            if enterUserName.count > 2{
-//                predicate = NSPredicate(format: "Self.customer_name beginsWith[c]%@", enterUserName)
-//            }else{
-//                predicate = NSPredicate(format: "Self.customer_name beginsWith[c]%@", "")
-//
-//            }
-//            searchBrandNameList = brandNameList.filtered(using: predicate) as NSArray
+
              GetUserList(userName: enterUserName, pagenumber: 1)
            
         }
@@ -145,4 +145,16 @@ class AllUserListVC: UIViewController,UITableViewDelegate,UITableViewDataSource,
 
     }
 
+}
+
+extension UIViewController{
+    
+    func showAlert(alertMessage : String ) {
+        let alertController = UIAlertController(title: "Error", message: alertMessage, preferredStyle: .alert)
+        
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(defaultAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
 }
